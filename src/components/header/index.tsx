@@ -7,13 +7,12 @@ function Header() {
       <Container>
         <Navbar.Brand href="/" style={{ color: "white" }}>
           <img
-            alt=""
-            src="/images/itmo-logo-light.svg"
-            // width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{" "}
-          <p style={{ margin: 0 }}>Веб-технологии</p>
+            alt="ИТМО"
+            src="/images/itmo-web-tech-logo-light.svg"
+            height="60"
+            width="160"
+            className="d-inline-block"
+          />
         </Navbar.Brand>
       </Container>
     </Navbar>
