@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import ThemeSwitcher from "@/components/theme-switcher";
 
 function Header() {
   return (
@@ -14,6 +15,7 @@ function Header() {
             className="d-inline-block"
           />
         </Navbar.Brand>
+        <ThemeSwitcher />
       </Container>
     </Navbar>
   );
