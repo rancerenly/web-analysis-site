@@ -3,7 +3,7 @@ import { ColorScheme, Theme } from "./types";
 
 export const getStoredTheme = (): Theme => {
   const value = localStorage.getItem("color-theme");
-  if (value !== null && THEME_NAMES[value]) {
+  if (value !== null && THEME_NAMES.includes(value)) {
     return value as Theme;
   } else {
     localStorage.setItem("color-theme", "auto");
@@ -25,12 +25,5 @@ export const getColorScheme = (theme: Theme): ColorScheme => {
 };
 
 export const getThemeIcon = (theme: Theme): string => {
-  switch (theme) {
-    case Theme.Auto:
-      return THEME_ICONS[Theme.Auto];
-    case Theme.Light:
-      return THEME_ICONS[Theme.Light];
-    case Theme.Dark:
-      return THEME_ICONS[Theme.Light];
-  }
+  return THEME_ICONS[theme];
 };

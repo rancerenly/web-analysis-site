@@ -2,19 +2,18 @@ import classNames from "classnames";
 import { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Theme } from "./types";
-import { THEME_ICONS } from "./constants";
-import { getColorScheme, getStoredTheme } from "./utils";
+import { getColorScheme, getStoredTheme, getThemeIcon } from "./utils";
 import ThemeListItem from "./theme-list-item";
 
 function ThemeSwitcher(): JSX.Element {
   const [theme, setTheme] = useState(() => getStoredTheme());
   const [colorScheme, setColorScheme] = useState(() => getColorScheme(theme));
-  const [themeIcon, setThemeIcon] = useState(THEME_ICONS[theme]);
+  const [themeIcon, setThemeIcon] = useState(() => getThemeIcon(theme));
 
   useEffect(() => {
     localStorage.setItem("color-theme", theme);
     setColorScheme(getColorScheme(theme));
-    setThemeIcon(THEME_ICONS[theme]);
+    setThemeIcon(getThemeIcon(theme));
   }, [theme]);
 
   useEffect(() => {
