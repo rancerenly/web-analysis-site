@@ -1,7 +1,6 @@
 import Main from "@/pages/main";
-import "./module.scss";
 
-function App() {
+function App(): JSX.Element {
   return (
     <>
       <Main />
