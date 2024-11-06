@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import ThemeSwitcher from "@/components/theme-switcher";
 
-function Header() {
+function Header(): JSX.Element {
   return (
     <Navbar bg="primary">
       <Container>

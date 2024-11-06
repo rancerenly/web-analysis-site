@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <footer className="bg-body-tertiary py-3 mt-auto">
       <Container className="d-flex flex-row justify-content-center gap-3">

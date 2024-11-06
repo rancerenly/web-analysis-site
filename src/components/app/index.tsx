@@ -1,6 +1,6 @@
 import Main from "@/pages/main";
 
-function App() {
+function App(): JSX.Element {
   return (
     <>
       <Main />
