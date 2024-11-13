@@ -6,10 +6,13 @@ function Header(): JSX.Element {
   return (
     <Navbar bg="primary">
       <Container>
-        <Navbar.Brand href="/" style={{ color: "white" }}>
+        <Navbar.Brand
+          href={`${import.meta.env.BASE_URL}`}
+          style={{ color: "white" }}
+        >
           <img
             alt="ИТМО"
-            src="/images/itmo-web-tech-logo-light.svg"
+            src="images/itmo-web-tech-logo-light.svg"
             height="60"
             width="160"
             className="d-inline-block"
