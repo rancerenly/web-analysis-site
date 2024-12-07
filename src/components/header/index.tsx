@@ -1,5 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Container } from "react-bootstrap";
 import ThemeSwitcher from "@/components/theme-switcher";
 
 function Header(): JSX.Element {
