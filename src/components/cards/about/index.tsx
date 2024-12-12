@@ -2,8 +2,10 @@ import { Card } from "react-bootstrap";
 
 function AboutCard(): JSX.Element {
   return (
-    <Card className="text-center">
-      <Card.Header as="h1">О программе</Card.Header>
+    <Card className="text-center border-0">
+      <Card.Header as="h1" className="border-0" style={{ background: "none" }}>
+        О программе
+      </Card.Header>
       <Card.Body>
         <Card.Text className="fs-4">
           Вы станете специалистом по анализу веб-технологий и инструментов
