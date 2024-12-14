@@ -1,10 +1,10 @@
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Button } from "react-bootstrap";
 import ThemeSwitcher from "@/components/theme-switcher";
 import { APP_BASE_PATH } from "@/constants";
 
 function Header(): JSX.Element {
   return (
-    <Navbar bg="primary">
+    <Navbar bg="primary" sticky="top">
       <Container>
         <Navbar.Brand href={APP_BASE_PATH} style={{ color: "white" }}>
           <img
@@ -15,7 +15,12 @@ function Header(): JSX.Element {
             className="d-inline-block"
           />
         </Navbar.Brand>
-        <ThemeSwitcher />
+        <Navbar.Collapse className="d-flex justify-content-end gap-3">
+          <Button size="lg" variant="info" href="#exam">
+            Экзамен
+          </Button>
+          <ThemeSwitcher />
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

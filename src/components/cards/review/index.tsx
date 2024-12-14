@@ -15,7 +15,12 @@ function ReviewCard(): JSX.Element {
 
   return (
     <Card className="text-center border-0">
-      <Card.Header as="h1" className="border-0" style={{ background: "none" }}>
+      <Card.Header
+        as="h1"
+        className="border-0"
+        style={{ background: "none" }}
+        id="review"
+      >
         Отзывы выпускников
       </Card.Header>
       <Card.Body>

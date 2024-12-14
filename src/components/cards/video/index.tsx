@@ -3,7 +3,12 @@ import { Card } from "react-bootstrap";
 function VideoCard(): JSX.Element {
   return (
     <Card className="text-center border-0">
-      <Card.Header as="h1" className="border-0" style={{ background: "none" }}>
+      <Card.Header
+        as="h1"
+        className="border-0"
+        style={{ background: "none" }}
+        id="video"
+      >
         День открытых дверей
       </Card.Header>
       <Card.Body>

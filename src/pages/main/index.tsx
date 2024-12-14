@@ -2,7 +2,9 @@ import { Container } from "react-bootstrap";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import {
+  AbitCard,
   AboutCard,
+  CareerCard,
   ExamCard,
   PlanCard,
   ReviewCard,
@@ -15,10 +17,12 @@ function Main(): JSX.Element {
       <Header />
       <Container className="d-flex flex-column min-h-100 py-5 gap-5">
         <AboutCard />
+        <CareerCard />
         <VideoCard />
         <ReviewCard />
         <PlanCard />
         <ExamCard />
+        <AbitCard />
       </Container>
       <Footer />
     </div>
