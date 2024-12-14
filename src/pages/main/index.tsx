@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import {
+  AbitCard,
   AboutCard,
   CareerCard,
   ExamCard,
@@ -21,6 +22,7 @@ function Main(): JSX.Element {
         <ReviewCard />
         <PlanCard />
         <ExamCard />
+        <AbitCard />
       </Container>
       <Footer />
     </div>
