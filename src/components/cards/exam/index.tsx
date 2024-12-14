@@ -4,7 +4,12 @@ import { EXAM_FILE } from "@/constants";
 function ExamCard(): JSX.Element {
   return (
     <Card className="text-center border-0">
-      <Card.Header as="h1" className="border-0" style={{ background: "none" }}>
+      <Card.Header
+        as="h1"
+        className="border-0"
+        style={{ background: "none" }}
+        id="exam"
+      >
         Вопросы для вступительного экзамена
       </Card.Header>
       <Card.Body>

@@ -4,7 +4,12 @@ import { PLAN_FILE } from "@/constants";
 function PlanCard(): JSX.Element {
   return (
     <Card className="text-center border-0">
-      <Card.Header as="h1" className="border-0" style={{ background: "none" }}>
+      <Card.Header
+        as="h1"
+        className="border-0"
+        style={{ background: "none" }}
+        id="plan"
+      >
         Учебный план
       </Card.Header>
       <Card.Body>
