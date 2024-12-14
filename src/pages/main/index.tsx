@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import {
   AboutCard,
+  CareerCard,
   ExamCard,
   PlanCard,
   ReviewCard,
@@ -15,6 +16,7 @@ function Main(): JSX.Element {
       <Header />
       <Container className="d-flex flex-column min-h-100 py-5 gap-5">
         <AboutCard />
+        <CareerCard />
         <VideoCard />
         <ReviewCard />
         <PlanCard />

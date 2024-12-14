@@ -21,9 +21,7 @@ function AboutCard(): JSX.Element {
           технологий, проводят эксперименты, делятся хорошими практиками
           фронтенд и бэкенд разработки и реализуют собственный проект, для
           которого подбирают оптимальное сочетание инструментов, таких как
-          Svelte, TypeScript, GraphQL, Node.js, JWT, Docker. По окончании
-          программы выпускник может занимать должности: Middle JavaScript /
-          Fullstack Developer, Senior JavaScript Developer.
+          Svelte, TypeScript, GraphQL, Node.js, JWT, Docker.
         </Card.Text>
       </Card.Body>
     </Card>
