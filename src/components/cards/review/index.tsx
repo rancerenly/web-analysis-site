@@ -44,6 +44,7 @@ function ReviewCard(): JSX.Element {
               <Pagination.Item
                 active={r.id === review.id}
                 onClick={() => handleReviewChange(r.id)}
+                key={r.id}
               >
                 {r.id}
               </Pagination.Item>
