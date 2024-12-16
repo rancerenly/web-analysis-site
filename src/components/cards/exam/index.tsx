@@ -19,12 +19,13 @@ function ExamCard(): JSX.Element {
       </Card.Body>
       <Card.Footer className="border-0" style={{ background: "none" }}>
         <Container className="d-flex justify-content-center p-0 gap-3">
-          <Button size="lg" href={EXAM_FILE}>
+          <Button
+            size="lg"
+            href={EXAM_FILE}
+            onClick={() => window.ym(99222941, "reachGoal", "getExam")}
+          >
             Открыть
           </Button>
-          <a className="btn btn-primary btn-lg" href={EXAM_FILE} download>
-            Сохранить
-          </a>
         </Container>
       </Card.Footer>
     </Card>

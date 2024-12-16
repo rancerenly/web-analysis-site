@@ -3,6 +3,8 @@ import ThemeSwitcher from "@/components/theme-switcher";
 import { APP_BASE_PATH } from "@/constants";
 
 function Header(): JSX.Element {
+  const variant = localStorage.getItem("a-b-test-variant") ?? "1";
+
   return (
     <Navbar bg="primary" sticky="top">
       <Container>
@@ -16,9 +18,11 @@ function Header(): JSX.Element {
           />
         </Navbar.Brand>
         <Navbar.Collapse className="d-flex justify-content-end gap-3">
-          <Button size="lg" variant="info" href="#exam">
-            Экзамен
-          </Button>
+          {variant === "4" ? (
+            <Button size="lg" variant="info" href="#exam">
+              Экзамен
+            </Button>
+          ) : null}
           <ThemeSwitcher />
         </Navbar.Collapse>
       </Container>
