@@ -17,7 +17,11 @@ function CareerCard(): JSX.Element {
           По окончании программы вы можете занимать должности: Middle JavaScript
           / Fullstack Developer, Senior JavaScript Developer.
         </Card.Text>
-        <Carousel className="bg-white rounded" indicators={false}>
+        <Carousel
+          className="bg-white border rounded"
+          data-bs-theme="dark"
+          indicators={false}
+        >
           <Carousel.Item>
             <img
               className={styles.company_logo}
